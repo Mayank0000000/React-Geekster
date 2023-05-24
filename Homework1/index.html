@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script>
+      var href = React.createElement("div",  { className: 'main' }, [
+        React.createElement("h1", null, "Topics covered"),
+        React.createElement("h3", null, "The following is a list of all the topics we covered in the MDN learning area."),
+        React.createElement("h3", { className: 'heading' }, "Getting started with web"),
+        React.createElement("h3", null, "Provides a practical introduction to web development for complete beginners"),
+        React.createElement("h3", { className: 'heading' }, "HTML- Structuring the web"),
+        React.createElement("h3", null, "HTML is a language that is used to structure the different parts of our content and define what their meaning or ourpose is. This topic teaches html in detail"),
+        React.createElement("h3", { className: 'heading' }, "CSS- Styling the web"),
+        React.createElement("h3", null, "CSS is a language that wre use to control our web style and layout, as well as adding behaviour like animation. This provides comprehensive coverage of CSS")
+
+
+      ]);
+
+      ReactDOM.render(href, document.getElementById("root"));
+    </script>
+  </body>
+</html>
